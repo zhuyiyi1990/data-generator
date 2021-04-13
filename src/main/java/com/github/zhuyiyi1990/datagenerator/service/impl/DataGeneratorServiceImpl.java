@@ -12,8 +12,13 @@ public class DataGeneratorServiceImpl implements DataGeneratorService {
     private DataGeneratorDao dataGeneratorDao;
 
     @Override
-    public void generateData(String arg) {
-        dataGeneratorDao.generateData(arg);
+    public void insertMasterTableByReferenceNumber(String referenceNumber) {
+        dataGeneratorDao.insertMasterTableByReferenceNumber(referenceNumber);
+    }
+
+    @Override
+    public void fitasUserGenerate(String userId, String userMD5Password) {
+        dataGeneratorDao.fitasUserGenerate(userId, userMD5Password);
     }
 
 }

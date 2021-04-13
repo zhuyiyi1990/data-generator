@@ -3,7 +3,35 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.zhuyiyi1990.datagenerator.dao.DataGeneratorDao">
-    <insert id="generateData" parameterType="string">
+    <insert id="insertMasterTableByReferenceNumber" parameterType="string">
         insert into hkbbcmas (refno,name,money) values (#{value},'aaa',1000)
+    </insert>
+    <insert id="fitasUserGenerate" parameterType="string">
+        insert into TAUSRMAS (REFNO, CUSTCOD, FLIUSER, FLIDATE, AUSER, ADATE, VERNO, TXNO, FUNC, FLRECTY, FLRCSTS,
+        FLUSRID, USERNAM, PROUNIT, APPPU01, APPPU02, APPPU03, APPPU04, APPPU05, APPPU06, APPPU07, APPPU08, APPPU09,
+        APPPU10, APPPU11, APPPU12, APPPU13, APPPU14, APPPU15, APPPU16, APPPU17, APPPU18, APPPU19, APPPU20, APPRD01,
+        APPRD02, APPRD03, APPRD04, APPRD05, APPRD06, APPRD07, APPRD08, APPRD09, APPRD10, APPRD11, APPRD12, APPRD13,
+        APPRD14, APPRD15, APPRD16, APPRD17, APPRD18, APPRD19, APPRD20, APPRD21, APPRD22, APPRD23, APPRD24, FLLCYCD,
+        APLMT01, APLMT02, APLMT03, APLMT04, APLMT05, APLMT06, APLMT07, APLMT08, APLMT09, APLMT10, APLMT11, APLMT12,
+        APLMT13, APLMT14, APLMT15, APLMT16, APLMT17, APLMT18, APLMT19, APLMT20, APLMT21, APLMT22, APLMT23, APLMT24,
+        FLINPFG, FLAUTFG, FLAPPFG, FLCUSFG, FLBNKFG, FLDUMFG, POSITIO, FLCLSFG, PRINTGP, PASSWRD, USERLEV, OVRIDE,
+        DEPCODE, BRCHCOD, RELAO, ACCBRH1, ACCPFC1, ACCBRH2, ACCPFC2, ACCBRH3, ACCPFC3, ACCBRH4, ACCPFC4, ACCBRH5,
+        ACCPFC5, ACCBRH6, ACCPFC6, ACCBRH7, ACCPFC7, ACCBRH8, ACCPFC8, ACCBRH9, ACCPFC9, ACCBRHA, ACCPFCA, ACCBRHB,
+        ACCPFCB, ACCBRHC, ACCPFCC, ACCBRHD, ACCPFCD, ACCBRHE, ACCPFCE, ACCBRHF, ACCPFCF, ACCBRHG, ACCPFCG, ACCBRHH,
+        ACCPFCH, ACCBRHI, ACCPFCI, ACCBRHJ, ACCPFCJ, ACCBRHK, ACCPFCK, ACCPU1, ACCPU2, ACCPU3, ACCPU4, ACCPU5, ACCPU6,
+        ACCPU7, ACCPU8, ACCPU9, ACCPU10, ACCPU11, ACCPU12, ACCPU13, ACCPU14, ACCPU15, ACCPU16, ACCPU17, ACCPU18,
+        ACCPU19, ACCPU20, TEMPPU, MENU, MD5PASS) values (#{param1}, 'A572213 ', '2 ', 20170908, '2 ', 20170908, 48, 1,
+        'TACPUCAN', 'M', 'C', #{param1}, 'TEST ', 'TF', '***', '72 ', 'CN ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+        ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'HKBLAMAS', 'HKBPRMAS', 'ISMNGMAS', 'HKBFCMAS', 'ISMBPMAS',
+        'HKBGLMAS', 'ISMILMAS', 'HKBRCMAS', 'ISMIBMAS', 'HKBEEMAS', 'HKBICMAS', 'ISMLCMAS', 'HKBILMAS', 'HKBIBMAS',
+        'HKBBGMAS', 'HKBSGMAS', 'HKBMAMAS', 'HKBTSMAS', 'HKBBDMAS', 'HKBRPMAS', 'FACACTXN', 'HKBGLMAS', 'ISMBCMAS',
+        'ISMBCMAS', ' 0', 9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99,
+        9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99, 9999999999999.99, 9999999999.99, 9999999999.99,
+        9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99, 9999999999.99, 0.00, 9999999999.99,
+        999999999.00, 9999999999.99, 99999999.00, 'Y', 'Y', 'Y', 'Y', 'Y', ' ', ' ', ' ', 'TRADEP2 ', 'B ', '2', 'Y',
+        '10', '501', '*** ', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***',
+        '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***',
+        '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', '***', 'TF', 'MT', '**', ' ', 'CN', ' ',
+        ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'TF', 'FMENUALL', #{param2})
     </insert>
 </mapper>
